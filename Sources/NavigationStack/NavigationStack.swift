@@ -44,7 +44,7 @@ public class NavigationStack: ObservableObject {
     public var depth: Int {
         viewStack.depth
     }
-
+    
     /// Returns a Boolean value indicating whether the stack contains a view with the specified ID.
     /// - Parameter id: The ID of the view to look for.
     /// - Returns: **true**  if the stack contains a view with the specified ID; otherwise, **false**.
@@ -116,7 +116,7 @@ public class NavigationStack: ObservableObject {
             views.removeAll()
         }
 
-        private func indexForView(withId identifier: String) -> Int? {
+        func indexForView(withId identifier: String) -> Int? {
             views.firstIndex {
                 $0.id == identifier
             }
