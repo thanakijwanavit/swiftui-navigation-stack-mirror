@@ -52,13 +52,6 @@ public class NavigationStackCompat: ObservableObject {
         viewStack.indexForView(withId: id) != nil
     }
 
-    /// Returns a Boolean value indicating whether the stack contains a view with the specified ID.
-    /// - Parameter id: The ID of the view to look for.
-    /// - Returns: **true**  if the stack contains a view with the specified ID; otherwise, **false**.
-    public func containsView(withId id: String) -> Bool {
-        viewStack.indexForView(withId: id) != nil
-    }
-
     /// Navigates to a view.
     /// - Parameters:
     ///   - element: The destination view.
